@@ -1,13 +1,20 @@
+// app-routing.module.ts
+// main app routing declaration
+// ----------------------------------------------------------------------------
+
+// importing modules
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+// creating the routes
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'home', loadChildren: '@app/home/home.module#HomePageModule' }
 ];
 
+// creating the angular module
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes)]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

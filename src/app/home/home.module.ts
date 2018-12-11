@@ -1,12 +1,22 @@
+// home/home.module.ts
+// home module declaration
+// ----------------------------------------------------------------------------
+
+// importing modules
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { HomePage } from './home.page';
+// ionic modules
+import { IonicModule } from '@ionic/angular';
 
+// custom modules
+import { HomePage } from '@app/home/home.page';
+
+// creating the angular module
 @NgModule({
+  declarations: [HomePage],
   imports: [
     CommonModule,
     FormsModule,
@@ -17,7 +27,6 @@ import { HomePage } from './home.page';
         component: HomePage
       }
     ])
-  ],
-  declarations: [HomePage]
+  ]
 })
 export class HomePageModule {}

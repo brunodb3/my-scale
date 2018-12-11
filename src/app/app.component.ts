@@ -1,9 +1,16 @@
+// app.component.ts
+// main app component declaration
+// ----------------------------------------------------------------------------
+
+// importing modules
 import { Component } from '@angular/core';
 
+// ionic modules
 import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 
+// creating the angular component
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
@@ -11,16 +18,23 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   constructor(
     private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private splashScreen: SplashScreen
   ) {
+    // initializing the app
     this.initializeApp();
   }
 
+  /**
+   * Initializes the app
+   *
+   * @memberof AppComponent
+   */
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
+      // ionic platform is ready, plugin configuration should go here
       this.splashScreen.hide();
+      this.statusBar.styleDefault();
     });
   }
 }
