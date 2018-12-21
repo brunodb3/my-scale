@@ -1,5 +1,5 @@
-// Home.page.spec.ts
-// Home page test declaration
+// ScaleDetail.page.spec.ts
+// ScaleDetail page test declaration
 // ----------------------------------------------------------------------------
 
 // importing modules
@@ -7,25 +7,25 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 // custom modules
-import { HomePage } from '@app/Home/Home.page';
+import { ScaleDetailPage } from '@app/ScaleDetail/ScaleDetail.page';
 
 // describing the component tests
-describe('HomePage', () => {
+describe('ScaleDetailPage', () => {
   // declaring variables
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
+  let component: ScaleDetailPage;
+  let fixture: ComponentFixture<ScaleDetailPage>;
 
   // fires before each test
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomePage],
+      declarations: [ScaleDetailPage],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));
 
   // fires before each test
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomePage);
+    fixture = TestBed.createComponent(ScaleDetailPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

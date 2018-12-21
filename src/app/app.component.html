@@ -3,4 +3,20 @@
   main app component template declaration
   -----------------------------------------------------------------------------
 -->
-<ion-app> <ion-router-outlet></ion-router-outlet> </ion-app>
+<ion-app>
+  <ion-menu side="start" menuId="sideMenu">
+    <ion-header>
+      <ion-toolbar color="primary"> <ion-title>Side Menu</ion-title> </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-item [routerLink]="['/home']">
+        <ion-menu-toggle autoHide="false"> Home </ion-menu-toggle>
+      </ion-item>
+      <ion-item [routerLink]="['/scale-list']">
+        <ion-menu-toggle autoHide="false"> Scale List </ion-menu-toggle>
+      </ion-item>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>

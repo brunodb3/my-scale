@@ -1,5 +1,5 @@
-// home.page.ts
-// home page component declaration
+// Home.page.ts
+// Home page component declaration
 // ----------------------------------------------------------------------------
 
 // importing modules
@@ -8,7 +8,22 @@ import { Component } from '@angular/core';
 // creating the component
 @Component({
   selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss']
+  templateUrl: 'Home.page.html',
+  styleUrls: ['Home.page.scss']
 })
-export class HomePage {}
+export class HomePage {
+  scales = [
+    {
+      id: 'abc',
+      name: 'First Scale'
+    },
+    {
+      id: 'def',
+      name: 'Second Scale'
+    },
+    {
+      id: 'ghi',
+      name: 'Third Scale'
+    }
+  ];
+}

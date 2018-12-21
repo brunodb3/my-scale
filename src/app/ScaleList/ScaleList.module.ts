@@ -1,5 +1,5 @@
-// Home/Home.module.ts
-// Home module declaration
+// ScaleList/ScaleList.module.ts
+// ScaleList module declaration
 // ----------------------------------------------------------------------------
 
 // importing modules
@@ -12,11 +12,11 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 // custom modules
-import { HomePage } from '@app/Home/Home.page';
+import { ScaleListPage } from '@app/ScaleList/ScaleList.page';
 
 // creating the angular module
 @NgModule({
-  declarations: [HomePage],
+  declarations: [ScaleListPage],
   imports: [
     CommonModule,
     FormsModule,
@@ -24,9 +24,9 @@ import { HomePage } from '@app/Home/Home.page';
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
+        component: ScaleListPage
       }
     ])
   ]
 })
-export class HomeModule {}
+export class ScaleListModule {}
