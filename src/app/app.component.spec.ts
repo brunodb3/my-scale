@@ -1,8 +1,8 @@
 // app.component.spec.ts
 // main app component test declaration
-// ----------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
 
-// importing modules
+// importing 3rd party modules
 import { TestBed, async } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 

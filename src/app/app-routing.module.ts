@@ -1,20 +1,16 @@
 // app-routing.module.ts
 // main app routing declaration
-// ----------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
 
-// importing modules
+// importing 3rd party modules
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // creating the routes
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: '@app/Home/Home.module#HomeModule' },
-  { path: 'scale-list', loadChildren: '@app/ScaleList/ScaleList.module#ScaleListModule' },
-  {
-    path: 'scale-detail/:id',
-    loadChildren: '@app/ScaleDetail/ScaleDetail.module#ScaleDetailModule'
-  }
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: '**', redirectTo: 'auth', pathMatch: 'full' },
+  { path: 'auth', loadChildren: '@app/modules/auth/auth.module#AuthModule' }
 ];
 
 // creating the angular module

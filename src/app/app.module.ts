@@ -1,8 +1,8 @@
 // app.module.ts
 // main app module declaration
-// ----------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
 
-// importing modules
+// importing 3rd party modules
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from 'angularfire2';
 import { RouteReuseStrategy } from '@angular/router';

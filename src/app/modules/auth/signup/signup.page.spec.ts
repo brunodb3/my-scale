@@ -1,31 +1,31 @@
-// ScaleDetail.page.spec.ts
-// ScaleDetail page test declaration
-// ----------------------------------------------------------------------------
+// Signup.page.spec.ts
+// Signup page test declaration
+// -------------------------------------------------------------------------------------------------
 
 // importing modules
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 // custom modules
-import { ScaleDetailPage } from '@app/ScaleDetail/ScaleDetail.page';
+import { SignupPage } from '@app/modules/auth/signup/signup.page';
 
 // describing the component tests
-describe('ScaleDetailPage', () => {
+describe('SignupPage', () => {
   // declaring variables
-  let component: ScaleDetailPage;
-  let fixture: ComponentFixture<ScaleDetailPage>;
+  let component: SignupPage;
+  let fixture: ComponentFixture<SignupPage>;
 
   // fires before each test
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ScaleDetailPage],
+      declarations: [SignupPage],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));
 
   // fires before each test
   beforeEach(() => {
-    fixture = TestBed.createComponent(ScaleDetailPage);
+    fixture = TestBed.createComponent(SignupPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

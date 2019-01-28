@@ -1,8 +1,8 @@
 // app.component.ts
 // main app component declaration
-// ----------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
 
-// importing modules
+// importing 3rd party modules
 import { Component } from '@angular/core';
 
 // ionic modules
