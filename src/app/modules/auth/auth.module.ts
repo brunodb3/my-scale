@@ -4,8 +4,6 @@
 
 // importing 3rd party modules
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 
 // ionic modules
 import { IonicModule } from '@ionic/angular';
@@ -20,6 +18,6 @@ import { AuthRouting } from '@app/modules/auth/auth.routing';
 // creating the angular module
 @NgModule({
   declarations: [LoginPage, SignupPage],
-  imports: [CommonModule, FormsModule, IonicModule, AuthRouting]
+  imports: [IonicModule, AuthRouting]
 })
 export class AuthModule {}

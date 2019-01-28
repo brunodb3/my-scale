@@ -13,7 +13,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "commit": "npx git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "build:prod": "ng build --prod",
+    "firebase:deploy": "firebase deploy",
+    "deploy": "npm run build:prod && npm run firebase:deploy"
   },
   "dependencies": {
     "@angular/common": "~7.0.0",

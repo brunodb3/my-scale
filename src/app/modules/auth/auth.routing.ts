@@ -12,14 +12,9 @@ import { SignupPage } from '@app/modules/auth/signup/signup.page';
 
 // creating the routes
 const routes: Routes = [
-  {
-    path: 'login',
-    component: LoginPage
-  },
-  {
-    path: 'signup',
-    component: SignupPage
-  }
+  { path: 'login', component: LoginPage },
+  { path: 'signup', component: SignupPage },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 // creating the module

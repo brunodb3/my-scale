@@ -17,6 +17,8 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 // custom modules
 import { environment } from '@env/environment';
 import { AppComponent } from '@app/app.component';
+import { CoreModule } from '@app/core/core.module';
+import { SharedModule } from '@app/shared/shared.module';
 import { AppRoutingModule } from '@app/app-routing.module';
 
 // declaring the angular module
@@ -26,10 +28,12 @@ import { AppRoutingModule } from '@app/app-routing.module';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(),
     AppRoutingModule,
+    IonicModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    CoreModule,
+    SharedModule
   ],
   providers: [
     StatusBar,
